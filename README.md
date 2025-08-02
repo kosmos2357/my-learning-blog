@@ -1,62 +1,71 @@
-# Astro Starter Kit: Blog
+<p align="center">
+  <img src="assets/gh-banner.png" alt="Odyssey Theme Banner">
+</p>
 
-```sh
-npm create astro@latest -- --template blog
+<br/>
+<div align="center">
+  <a href="https://twitter.com/jaydanurwin">
+  <img src="assets/twitter-badge.svg" alt="Follow Jaydan Urwin on Twitter"/>
+</a>
+  <a href="https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0">
+    <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
+  </a>
+</div>
+<br/>
+
+# Odyssey Theme
+
+Odyssey Theme is a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is fully themeable to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
+
+## Features
+
+<p align="center">
+  <img src="assets/lh-screenshot.png" alt="Screenshot of perfect score in Lighthouse benchmark">
+</p>
+
+
+- ✅ **A perfect score in Lighthouse**
+- ✅ **Blazing fast performance thanks to Astro 🚀**
+- ✅ **A Full Featured Blog with Tagging**
+- ✅ **Fully theme-able styles with for buttons, shapes, backgrounds, surfaces, etc.**
+- ✅ **Responsive, mobile-friendly landing pages**
+- ✅ **SEO Best Practices (Open Graph, Canonical URLs, sitemap)**
+- ✅ **Performant Local Fonts Setup**
+- ✅ **Contact Forms Setup for Netlify, Formspree, Formspark, etc.**
+- ✅ **A package of ready-to-use UI components**
+
+
+## Demo
+
+View a [live demo](https://odyssey-theme.sapling.supply/) of the Odyssey Theme.
+
+## Documentation
+
+1. View the [Theme Setup Guide](https://odyssey-theme.sapling.supply/theme/theme-setup)
+2. View the [Customizing the Theme Guide](https://odyssey-theme.sapling.supply/theme/customizing-odyssey)
+
+## Usage
+
+```bash
+cd theme
+
+npm install
+
+npm start
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Deploy
 
-Features:
+Feel free to deploy and host your site on your favorite static hosting service such as Netlify, Firebase Hosting, Vercel, GitHub Pages, etc.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
 
-## 🚀 Project Structure
+## Sponsor
 
-Inside of your Astro project, you'll see the following folders and files:
+If you find this theme useful, please consider donating to support the continued development of it with the link below
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+[Donate to Odyssey Theme](https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0)
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Support
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Please feel free to post issues or submit PRs to this repo and we will do our best to respond in a timely manner, keeping in mind this template is offered for free as is on GitHub.

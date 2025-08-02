@@ -1,49 +1,92 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Container, FeatureCard } from '@components/odyssey-theme';
+
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+<Layout>
+	<HomeHeroSection />
+	<Container>
+		<section class="feature-card__section">
+			<h2>Landing Pages</h2>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				Use one of our landing pages to jumpstart your website or
+				ad campaign.
 			</p>
+			<div class="feature-card__grid">
+				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
+				</FeatureCard>
+				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
+
+	<Container>
+		<section class="feature-card__section">
+			<h2>Company Pages</h2>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+				Use one of our prebuilt company pages for your about page, contact page,
+				legal pages, blog posts, etc.
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+			<div class="feature-card__grid">
+				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
+				</FeatureCard>
+				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
+				</FeatureCard>
+				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
+				</FeatureCard>
+				<FeatureCard
+					href="/blog/posts/remote-work-mental-health"
+					title="Blog Post"
+          imgSrc="/assets/images/home/screenshots/blog-post"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/company/legal"
+					imgSrc="/assets/images/home/screenshots/legal"
+					title="Legal Page"
+				>
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
+
+	<Container>
+		<section class="feature-card__section">
+			<h2>Theme Pages</h2>
+			<p>Learn more about how to set up and use the Odyssey Theme.</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="/theme/get-started"
+					imgSrc="/assets/images/home/screenshots/get-started"
+					title="Get Started"
+				>
+				</FeatureCard>
+				<FeatureCard
+					href="/theme/style-guide"
+					imgSrc="/assets/images/home/screenshots/style-guide"
+					title="Style Guide"
+				>
+				</FeatureCard>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
